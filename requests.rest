@@ -1,0 +1,33 @@
+GET http://localhost:3001/api/profile/find
+Content-Type: application/json
+
+{
+    "dogName": "H"
+}
+###
+
+POST http://localhost:3001/api/profile/new
+Content-Type: application/json
+
+{
+    "dogName": "Greg",
+    "idealWeight": 78,
+    "activityLevel": "active",
+    "neutered": "yes"
+}
+
+###
+POST http://localhost:3001/macro/calories
+Content-Type: application/json
+
+###
+PUT http://localhost:3001/api/profile/edit/6424b0f645385e1be363d031
+Content-Type: application/json
+{
+    "dogWeight": 55
+}
+
+
+###
+DELETE http://localhost:3001/profile/delete/641e09221cab8a3afc1981b8
+
